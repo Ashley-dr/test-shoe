@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import { data } from "../config/data";
 const GenInfo = () => {
   const data = [
     {
@@ -53,13 +53,6 @@ export default GenInfo;
 export const Brands = () => {
   const navigate = useNavigate();
 
-  const data = [
-    { src: "/GenInfo/adidas.jpg", name: "Adidas", to: "/search/adidas" },
-    { src: "/GenInfo/nike.png", name: "Nike", to: "/search/nike" },
-    { src: "/GenInfo/skechers.jpg", name: "Skechers", to: "/search/skechers" },
-    { src: "/GenInfo/puma.jpg", name: "Puma", to: "/search/puma" },
-  ];
-
   return (
     <div className="flex flex-col items-center my-16 w-full">
       <p className="child:ring-white font-bold mb-6">Top Brands</p>
@@ -90,7 +83,6 @@ export const Brands = () => {
     </div>
   );
 };
-
 
 export const BestSellers = () => {
   const navigate = useNavigate();
